@@ -1,0 +1,62 @@
+Args in experiment:
+Namespace(enable_visual=True, fusion_layers=1, d_model=64, n_heads=8, attn_dropout=0.15, d_ff=None, top_k=3, num_kernels=3, encoder_layers=2, hidden_dim=None, coef_scale=0.1, tfactor=0.5, revin=1, ma_type='ema', ema_a=0.3, ema_b=0.3, alpha=0.35, dropout=0.1, batch_size=64, is_training=1, model_id='ETTh1_96_720', model='PerciNet', data='ETTh1', root_path='D:\\work\\datasets\\all_datasets/ETT-small/', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=96, label_len=48, pred_len=720, seasonal_patterns='Monthly', enc_in=7, embed='timeF', activation='gelu', num_workers=0, itr=1, train_epochs=10, embedding_epochs=5, patience=3, pct_start=0.2, learning_rate=0.0004, embedding_lr=0.0005, des='Exp', loss='MSE', lradj='type1', use_gpu=True, gpu=0, use_multi_gpu=False, devices='0,1,2,3', use_dtw=False, inverse=False)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_96_720_PerciNet_ETTh1_bs64_ftM_sl96_ll48_pre720_dm64_nh8_dffNone_tk3_nk3_el2_fl1_hdNone_cs0.1_tf0.5_dp01_adr015_em0.3_lr00004_ep10_Exp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 7825
+val 2161
+test 2161
+	iters: 100, epoch: 1 | loss: 3.5956941
+	speed: 0.1357s/iter; left time: 152.1152s
+Epoch: 1 cost time: 16.25717806816101
+Epoch: 1, Steps: 122 | Train Loss: 3.7124776 Vali Loss: 4.7155832 Test Loss: 0.4732586
+Validation loss decreased (inf --> 4.715583).  Saving model ...
+	iters: 100, epoch: 2 | loss: 3.6309245
+	speed: 0.1798s/iter; left time: 179.6289s
+Epoch: 2 cost time: 15.60006046295166
+Epoch: 2, Steps: 122 | Train Loss: 3.6049341 Vali Loss: 4.6974429 Test Loss: 0.4706885
+Validation loss decreased (4.715583 --> 4.697443).  Saving model ...
+	iters: 100, epoch: 3 | loss: 3.4683948
+	speed: 0.1745s/iter; left time: 153.0463s
+Epoch: 3 cost time: 14.764880895614624
+Epoch: 3, Steps: 122 | Train Loss: 3.5700632 Vali Loss: 4.6736375 Test Loss: 0.4540782
+Validation loss decreased (4.697443 --> 4.673637).  Saving model ...
+	iters: 100, epoch: 4 | loss: 3.6509218
+	speed: 0.1681s/iter; left time: 126.9477s
+Epoch: 4 cost time: 13.976400375366211
+Epoch: 4, Steps: 122 | Train Loss: 3.5526764 Vali Loss: 4.6651650 Test Loss: 0.4475281
+Validation loss decreased (4.673637 --> 4.665165).  Saving model ...
+	iters: 100, epoch: 5 | loss: 3.5933750
+	speed: 0.1642s/iter; left time: 103.9478s
+Epoch: 5 cost time: 14.331583023071289
+Epoch: 5, Steps: 122 | Train Loss: 3.5430994 Vali Loss: 4.6626233 Test Loss: 0.4493262
+Validation loss decreased (4.665165 --> 4.662623).  Saving model ...
+	iters: 100, epoch: 6 | loss: 3.5396416
+	speed: 0.1681s/iter; left time: 85.8987s
+Epoch: 6 cost time: 14.522884368896484
+Epoch: 6, Steps: 122 | Train Loss: 3.5384145 Vali Loss: 4.6624247 Test Loss: 0.4513657
+Validation loss decreased (4.662623 --> 4.662425).  Saving model ...
+	iters: 100, epoch: 7 | loss: 3.5781667
+	speed: 0.1737s/iter; left time: 67.5823s
+Epoch: 7 cost time: 14.77039361000061
+Epoch: 7, Steps: 122 | Train Loss: 3.5354222 Vali Loss: 4.6604910 Test Loss: 0.4516179
+Validation loss decreased (4.662425 --> 4.660491).  Saving model ...
+	iters: 100, epoch: 8 | loss: 3.4930561
+	speed: 0.1715s/iter; left time: 45.7816s
+Epoch: 8 cost time: 14.674113035202026
+Epoch: 8, Steps: 122 | Train Loss: 3.5336697 Vali Loss: 4.6622867 Test Loss: 0.4518939
+EarlyStopping counter: 1 out of 3
+	iters: 100, epoch: 9 | loss: 3.4700036
+	speed: 0.1705s/iter; left time: 24.7296s
+Epoch: 9 cost time: 14.529465436935425
+Epoch: 9, Steps: 122 | Train Loss: 3.5333519 Vali Loss: 4.6574674 Test Loss: 0.4506447
+Validation loss decreased (4.660491 --> 4.657467).  Saving model ...
+	iters: 100, epoch: 10 | loss: 3.4693227
+	speed: 0.1710s/iter; left time: 3.9327s
+Epoch: 10 cost time: 14.75357699394226
+Epoch: 10, Steps: 122 | Train Loss: 3.5324911 Vali Loss: 4.6583256 Test Loss: 0.4507903
+EarlyStopping counter: 1 out of 3
+>>>>>>>testing : ETTh1_96_720_PerciNet_ETTh1_bs64_ftM_sl96_ll48_pre720_dm64_nh8_dffNone_tk3_nk3_el2_fl1_hdNone_cs0.1_tf0.5_dp01_adr015_em0.3_lr00004_ep10_Exp_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2161
+test shape: (2161, 720, 7) (2161, 720, 7)
+test shape: (2161, 720, 7) (2161, 720, 7)
+mse:0.45064473152160645, mae:0.45245325565338135, dtw:Not calculated
