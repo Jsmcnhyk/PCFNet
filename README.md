@@ -2,7 +2,7 @@
 
 
 ## Updates
-Release the detailed training logs (see [_logs](logs/LongForecasting/PCFNet)).
+The detailed training logs (see [_logs](logs/LongForecasting/PCFNet)).
 
 ## Usage
 
