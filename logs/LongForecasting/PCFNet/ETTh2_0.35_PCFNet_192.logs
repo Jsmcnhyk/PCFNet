@@ -1,0 +1,58 @@
+Args in experiment:
+Namespace(enable_visual=False, fusion_layers=2, d_model=256, n_heads=8, attn_dropout=0.15, d_ff=None, top_k=3, num_kernels=5, encoder_layers=2, hidden_dim=None, coef_scale=0.1, tfactor=0.5, revin=1, ma_type='ema', ema_a=0.3, ema_b=0.3, alpha=0.35, dropout=0.1, batch_size=64, is_training=1, model_id='ETTh2_96_192', model='PCFNet', data='ETTh2', root_path='D:\\work\\datasets\\all_datasets/ETT-small/', data_path='ETTh2.csv', features='M', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=96, label_len=48, pred_len=192, seasonal_patterns='Monthly', enc_in=7, embed='timeF', activation='gelu', num_workers=0, itr=1, train_epochs=10, embedding_epochs=5, patience=3, pct_start=0.2, learning_rate=0.0002, embedding_lr=0.0005, des='Exp', loss='MSE', lradj='type1', use_gpu=True, gpu=0, use_multi_gpu=False, devices='0,1,2,3', use_dtw=False, inverse=False)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh2_96_192_PCFNet_ETTh2_bs64_ftM_sl96_ll48_pre192_dm256_nh8_dffNone_tk3_nk5_el2_fl2_hdNone_cs0.1_tf0.5_dp01_adr015_em0.3_lr00002_ep10_Exp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8353
+val 2689
+test 2689
+	iters: 100, epoch: 1 | loss: 1.5006205
+	speed: 0.0403s/iter; left time: 48.4352s
+Epoch: 1 cost time: 5.250410318374634
+Epoch: 1, Steps: 130 | Train Loss: 1.6424751 Vali Loss: 1.4285854 Test Loss: 0.3679494
+Validation loss decreased (inf --> 1.428585).  Saving model ...
+	iters: 100, epoch: 2 | loss: 1.7103065
+	speed: 0.0575s/iter; left time: 61.5645s
+Epoch: 2 cost time: 4.632787704467773
+Epoch: 2, Steps: 130 | Train Loss: 1.5719924 Vali Loss: 1.4151934 Test Loss: 0.3550030
+Validation loss decreased (1.428585 --> 1.415193).  Saving model ...
+	iters: 100, epoch: 3 | loss: 1.5498562
+	speed: 0.0593s/iter; left time: 55.8129s
+Epoch: 3 cost time: 4.915926933288574
+Epoch: 3, Steps: 130 | Train Loss: 1.5482362 Vali Loss: 1.4085246 Test Loss: 0.3517303
+Validation loss decreased (1.415193 --> 1.408525).  Saving model ...
+	iters: 100, epoch: 4 | loss: 1.4475932
+	speed: 0.0550s/iter; left time: 44.6071s
+Epoch: 4 cost time: 4.380154371261597
+Epoch: 4, Steps: 130 | Train Loss: 1.5378312 Vali Loss: 1.4068192 Test Loss: 0.3486586
+Validation loss decreased (1.408525 --> 1.406819).  Saving model ...
+	iters: 100, epoch: 5 | loss: 1.4901836
+	speed: 0.0533s/iter; left time: 36.2850s
+Epoch: 5 cost time: 4.388780832290649
+Epoch: 5, Steps: 130 | Train Loss: 1.5314020 Vali Loss: 1.4071169 Test Loss: 0.3497352
+EarlyStopping counter: 1 out of 3
+	iters: 100, epoch: 6 | loss: 1.3674911
+	speed: 0.0563s/iter; left time: 31.0061s
+Epoch: 6 cost time: 4.627149820327759
+Epoch: 6, Steps: 130 | Train Loss: 1.5277113 Vali Loss: 1.4067359 Test Loss: 0.3505558
+Validation loss decreased (1.406819 --> 1.406736).  Saving model ...
+	iters: 100, epoch: 7 | loss: 1.4363508
+	speed: 0.0565s/iter; left time: 23.7795s
+Epoch: 7 cost time: 4.793811321258545
+Epoch: 7, Steps: 130 | Train Loss: 1.5258749 Vali Loss: 1.4070772 Test Loss: 0.3497891
+EarlyStopping counter: 1 out of 3
+	iters: 100, epoch: 8 | loss: 1.4350055
+	speed: 0.0578s/iter; left time: 16.8131s
+Epoch: 8 cost time: 4.480914354324341
+Epoch: 8, Steps: 130 | Train Loss: 1.5244655 Vali Loss: 1.4070878 Test Loss: 0.3498197
+EarlyStopping counter: 2 out of 3
+	iters: 100, epoch: 9 | loss: 1.7078035
+	speed: 0.0567s/iter; left time: 9.1249s
+Epoch: 9 cost time: 4.620940208435059
+Epoch: 9, Steps: 130 | Train Loss: 1.5244320 Vali Loss: 1.4071029 Test Loss: 0.3499479
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh2_96_192_PCFNet_ETTh2_bs64_ftM_sl96_ll48_pre192_dm256_nh8_dffNone_tk3_nk5_el2_fl2_hdNone_cs0.1_tf0.5_dp01_adr015_em0.3_lr00002_ep10_Exp_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2689
+test shape: (2689, 192, 7) (2689, 192, 7)
+test shape: (2689, 192, 7) (2689, 192, 7)
+mse:0.35055580735206604, mae:0.37723851203918457, dtw:Not calculated

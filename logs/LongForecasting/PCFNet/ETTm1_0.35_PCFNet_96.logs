@@ -1,0 +1,117 @@
+Args in experiment:
+Namespace(enable_visual=False, fusion_layers=1, d_model=256, n_heads=8, attn_dropout=0.15, d_ff=None, top_k=2, num_kernels=5, encoder_layers=2, hidden_dim=None, coef_scale=0.1, tfactor=1.0, revin=1, ma_type='ema', ema_a=0.3, ema_b=0.3, alpha=0.35, dropout=0.1, batch_size=64, is_training=1, model_id='ETTm1_96_96', model='PCFNet', data='ETTm1', root_path='D:\\work\\datasets\\all_datasets/ETT-small/', data_path='ETTm1.csv', features='M', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=96, label_len=48, pred_len=96, seasonal_patterns='Monthly', enc_in=7, embed='timeF', activation='gelu', num_workers=0, itr=1, train_epochs=10, embedding_epochs=5, patience=3, pct_start=0.2, learning_rate=0.00015, embedding_lr=0.0005, des='Exp', loss='MSE', lradj='type1', use_gpu=True, gpu=0, use_multi_gpu=False, devices='0,1,2,3', use_dtw=False, inverse=False)
+Use GPU: cuda:0
+>>>>>>>start training : ETTm1_96_96_PCFNet_ETTm1_bs64_ftM_sl96_ll48_pre96_dm256_nh8_dffNone_tk2_nk5_el2_fl1_hdNone_cs0.1_tf1.0_dp01_adr015_em0.3_lr000015_ep10_Exp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 34369
+val 11425
+test 11425
+	iters: 100, epoch: 1 | loss: 1.2125127
+	speed: 0.0219s/iter; left time: 115.6786s
+	iters: 200, epoch: 1 | loss: 1.1268361
+	speed: 0.0169s/iter; left time: 87.5138s
+	iters: 300, epoch: 1 | loss: 1.1339819
+	speed: 0.0181s/iter; left time: 91.5376s
+	iters: 400, epoch: 1 | loss: 1.1535041
+	speed: 0.0175s/iter; left time: 87.1945s
+	iters: 500, epoch: 1 | loss: 1.1136369
+	speed: 0.0181s/iter; left time: 88.0310s
+Epoch: 1 cost time: 9.980276584625244
+Epoch: 1, Steps: 537 | Train Loss: 1.1703434 Vali Loss: 1.2233280 Test Loss: 0.3140203
+Validation loss decreased (inf --> 1.223328).  Saving model ...
+	iters: 100, epoch: 2 | loss: 1.1217182
+	speed: 0.0447s/iter; left time: 211.6528s
+	iters: 200, epoch: 2 | loss: 1.1148591
+	speed: 0.0184s/iter; left time: 85.4415s
+	iters: 300, epoch: 2 | loss: 1.0868708
+	speed: 0.0178s/iter; left time: 80.7012s
+	iters: 400, epoch: 2 | loss: 1.0350373
+	speed: 0.0176s/iter; left time: 78.0863s
+	iters: 500, epoch: 2 | loss: 1.0934823
+	speed: 0.0176s/iter; left time: 76.3128s
+Epoch: 2 cost time: 9.521617412567139
+Epoch: 2, Steps: 537 | Train Loss: 1.0825158 Vali Loss: 1.2083272 Test Loss: 0.3122042
+Validation loss decreased (1.223328 --> 1.208327).  Saving model ...
+	iters: 100, epoch: 3 | loss: 1.0389482
+	speed: 0.0459s/iter; left time: 192.6910s
+	iters: 200, epoch: 3 | loss: 1.0148453
+	speed: 0.0178s/iter; left time: 72.9356s
+	iters: 300, epoch: 3 | loss: 1.0299113
+	speed: 0.0170s/iter; left time: 68.0209s
+	iters: 400, epoch: 3 | loss: 1.0832905
+	speed: 0.0179s/iter; left time: 69.8617s
+	iters: 500, epoch: 3 | loss: 1.0738275
+	speed: 0.0185s/iter; left time: 70.3471s
+Epoch: 3 cost time: 9.767967939376831
+Epoch: 3, Steps: 537 | Train Loss: 1.0541099 Vali Loss: 1.2035097 Test Loss: 0.3085875
+Validation loss decreased (1.208327 --> 1.203510).  Saving model ...
+	iters: 100, epoch: 4 | loss: 1.0930032
+	speed: 0.0457s/iter; left time: 167.2715s
+	iters: 200, epoch: 4 | loss: 1.0379227
+	speed: 0.0180s/iter; left time: 63.9282s
+	iters: 300, epoch: 4 | loss: 1.0328521
+	speed: 0.0169s/iter; left time: 58.3938s
+	iters: 400, epoch: 4 | loss: 1.0196867
+	speed: 0.0173s/iter; left time: 58.0518s
+	iters: 500, epoch: 4 | loss: 1.0738696
+	speed: 0.0174s/iter; left time: 56.7146s
+Epoch: 4 cost time: 9.381368160247803
+Epoch: 4, Steps: 537 | Train Loss: 1.0426900 Vali Loss: 1.2031735 Test Loss: 0.3070073
+Validation loss decreased (1.203510 --> 1.203174).  Saving model ...
+	iters: 100, epoch: 5 | loss: 1.0532718
+	speed: 0.0446s/iter; left time: 139.3763s
+	iters: 200, epoch: 5 | loss: 0.9802251
+	speed: 0.0189s/iter; left time: 57.1600s
+	iters: 300, epoch: 5 | loss: 1.0432391
+	speed: 0.0188s/iter; left time: 54.9996s
+	iters: 400, epoch: 5 | loss: 1.0177244
+	speed: 0.0187s/iter; left time: 52.9120s
+	iters: 500, epoch: 5 | loss: 1.0279864
+	speed: 0.0176s/iter; left time: 48.0015s
+Epoch: 5 cost time: 9.88654088973999
+Epoch: 5, Steps: 537 | Train Loss: 1.0376784 Vali Loss: 1.2027620 Test Loss: 0.3068876
+Validation loss decreased (1.203174 --> 1.202762).  Saving model ...
+	iters: 100, epoch: 6 | loss: 0.9757543
+	speed: 0.0456s/iter; left time: 117.8732s
+	iters: 200, epoch: 6 | loss: 0.9679035
+	speed: 0.0175s/iter; left time: 43.5619s
+	iters: 300, epoch: 6 | loss: 1.0185246
+	speed: 0.0178s/iter; left time: 42.5465s
+	iters: 400, epoch: 6 | loss: 0.9949593
+	speed: 0.0193s/iter; left time: 44.0944s
+	iters: 500, epoch: 6 | loss: 1.0472896
+	speed: 0.0173s/iter; left time: 37.8446s
+Epoch: 6 cost time: 9.69264817237854
+Epoch: 6, Steps: 537 | Train Loss: 1.0350944 Vali Loss: 1.2045568 Test Loss: 0.3062775
+EarlyStopping counter: 1 out of 3
+	iters: 100, epoch: 7 | loss: 1.0494370
+	speed: 0.0439s/iter; left time: 89.9459s
+	iters: 200, epoch: 7 | loss: 1.0483092
+	speed: 0.0177s/iter; left time: 34.5330s
+	iters: 300, epoch: 7 | loss: 1.0410340
+	speed: 0.0180s/iter; left time: 33.3692s
+	iters: 400, epoch: 7 | loss: 1.0709429
+	speed: 0.0194s/iter; left time: 33.9015s
+	iters: 500, epoch: 7 | loss: 0.9847615
+	speed: 0.0209s/iter; left time: 34.5405s
+Epoch: 7 cost time: 10.134820461273193
+Epoch: 7, Steps: 537 | Train Loss: 1.0338714 Vali Loss: 1.2042506 Test Loss: 0.3058766
+EarlyStopping counter: 2 out of 3
+	iters: 100, epoch: 8 | loss: 0.9938045
+	speed: 0.0453s/iter; left time: 68.5413s
+	iters: 200, epoch: 8 | loss: 1.0407331
+	speed: 0.0180s/iter; left time: 25.3721s
+	iters: 300, epoch: 8 | loss: 1.0234492
+	speed: 0.0185s/iter; left time: 24.3094s
+	iters: 400, epoch: 8 | loss: 1.0605080
+	speed: 0.0193s/iter; left time: 23.3503s
+	iters: 500, epoch: 8 | loss: 1.0582390
+	speed: 0.0175s/iter; left time: 19.4763s
+Epoch: 8 cost time: 9.757250308990479
+Epoch: 8, Steps: 537 | Train Loss: 1.0331416 Vali Loss: 1.2047014 Test Loss: 0.3058955
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTm1_96_96_PCFNet_ETTm1_bs64_ftM_sl96_ll48_pre96_dm256_nh8_dffNone_tk2_nk5_el2_fl1_hdNone_cs0.1_tf1.0_dp01_adr015_em0.3_lr000015_ep10_Exp_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 11425
+test shape: (11425, 96, 7) (11425, 96, 7)
+test shape: (11425, 96, 7) (11425, 96, 7)
+mse:0.30688756704330444, mae:0.33941200375556946, dtw:Not calculated

@@ -1,0 +1,62 @@
+Args in experiment:
+Namespace(enable_visual=False, fusion_layers=2, d_model=256, n_heads=8, attn_dropout=0.15, d_ff=None, top_k=3, num_kernels=5, encoder_layers=2, hidden_dim=None, coef_scale=0.1, tfactor=0.5, revin=1, ma_type='ema', ema_a=0.3, ema_b=0.3, alpha=0.35, dropout=0.1, batch_size=64, is_training=1, model_id='ETTh2_96_720', model='PCFNet', data='ETTh2', root_path='D:\\work\\datasets\\all_datasets/ETT-small/', data_path='ETTh2.csv', features='M', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=96, label_len=48, pred_len=720, seasonal_patterns='Monthly', enc_in=7, embed='timeF', activation='gelu', num_workers=0, itr=1, train_epochs=10, embedding_epochs=5, patience=3, pct_start=0.2, learning_rate=0.0002, embedding_lr=0.0005, des='Exp', loss='MSE', lradj='type1', use_gpu=True, gpu=0, use_multi_gpu=False, devices='0,1,2,3', use_dtw=False, inverse=False)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh2_96_720_PCFNet_ETTh2_bs64_ftM_sl96_ll48_pre720_dm256_nh8_dffNone_tk3_nk5_el2_fl2_hdNone_cs0.1_tf0.5_dp01_adr015_em0.3_lr00002_ep10_Exp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 7825
+val 2161
+test 2161
+	iters: 100, epoch: 1 | loss: 3.0909519
+	speed: 0.0402s/iter; left time: 45.0480s
+Epoch: 1 cost time: 4.811757802963257
+Epoch: 1, Steps: 122 | Train Loss: 3.1077298 Vali Loss: 2.8228572 Test Loss: 0.4183163
+Validation loss decreased (inf --> 2.822857).  Saving model ...
+	iters: 100, epoch: 2 | loss: 3.0752711
+	speed: 0.0534s/iter; left time: 53.3615s
+Epoch: 2 cost time: 4.3556740283966064
+Epoch: 2, Steps: 122 | Train Loss: 3.0340956 Vali Loss: 2.8014862 Test Loss: 0.4101565
+Validation loss decreased (2.822857 --> 2.801486).  Saving model ...
+	iters: 100, epoch: 3 | loss: 2.8650081
+	speed: 0.0481s/iter; left time: 42.2147s
+Epoch: 3 cost time: 4.012352705001831
+Epoch: 3, Steps: 122 | Train Loss: 2.9997647 Vali Loss: 2.7861853 Test Loss: 0.4071103
+Validation loss decreased (2.801486 --> 2.786185).  Saving model ...
+	iters: 100, epoch: 4 | loss: 2.7546341
+	speed: 0.0541s/iter; left time: 40.8113s
+Epoch: 4 cost time: 4.412878036499023
+Epoch: 4, Steps: 122 | Train Loss: 2.9847309 Vali Loss: 2.7832837 Test Loss: 0.4044701
+Validation loss decreased (2.786185 --> 2.783284).  Saving model ...
+	iters: 100, epoch: 5 | loss: 2.9645836
+	speed: 0.0519s/iter; left time: 32.8538s
+Epoch: 5 cost time: 4.277444839477539
+Epoch: 5, Steps: 122 | Train Loss: 2.9761268 Vali Loss: 2.7795355 Test Loss: 0.4014360
+Validation loss decreased (2.783284 --> 2.779535).  Saving model ...
+	iters: 100, epoch: 6 | loss: 2.9755046
+	speed: 0.0504s/iter; left time: 25.7737s
+Epoch: 6 cost time: 4.282399654388428
+Epoch: 6, Steps: 122 | Train Loss: 2.9713129 Vali Loss: 2.7821651 Test Loss: 0.3977821
+EarlyStopping counter: 1 out of 3
+	iters: 100, epoch: 7 | loss: 3.0277181
+	speed: 0.0544s/iter; left time: 21.1575s
+Epoch: 7 cost time: 4.3729143142700195
+Epoch: 7, Steps: 122 | Train Loss: 2.9674144 Vali Loss: 2.7776095 Test Loss: 0.3959166
+Validation loss decreased (2.779535 --> 2.777610).  Saving model ...
+	iters: 100, epoch: 8 | loss: 3.0196600
+	speed: 0.0517s/iter; left time: 13.8148s
+Epoch: 8 cost time: 4.292579650878906
+Epoch: 8, Steps: 122 | Train Loss: 2.9646835 Vali Loss: 2.7763747 Test Loss: 0.3949912
+Validation loss decreased (2.777610 --> 2.776375).  Saving model ...
+	iters: 100, epoch: 9 | loss: 2.8490112
+	speed: 0.0540s/iter; left time: 7.8265s
+Epoch: 9 cost time: 4.496436595916748
+Epoch: 9, Steps: 122 | Train Loss: 2.9630724 Vali Loss: 2.7801735 Test Loss: 0.3944277
+EarlyStopping counter: 1 out of 3
+	iters: 100, epoch: 10 | loss: 2.7313373
+	speed: 0.0502s/iter; left time: 1.1549s
+Epoch: 10 cost time: 4.0657570362091064
+Epoch: 10, Steps: 122 | Train Loss: 2.9626370 Vali Loss: 2.7812848 Test Loss: 0.3942304
+EarlyStopping counter: 2 out of 3
+>>>>>>>testing : ETTh2_96_720_PCFNet_ETTh2_bs64_ftM_sl96_ll48_pre720_dm256_nh8_dffNone_tk3_nk5_el2_fl2_hdNone_cs0.1_tf0.5_dp01_adr015_em0.3_lr00002_ep10_Exp_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2161
+test shape: (2161, 720, 7) (2161, 720, 7)
+test shape: (2161, 720, 7) (2161, 720, 7)
+mse:0.3949911594390869, mae:0.42449840903282166, dtw:Not calculated

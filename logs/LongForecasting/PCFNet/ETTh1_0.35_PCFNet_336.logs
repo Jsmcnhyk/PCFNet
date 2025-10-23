@@ -1,0 +1,63 @@
+Args in experiment:
+Namespace(enable_visual=False, fusion_layers=1, d_model=64, n_heads=8, attn_dropout=0.15, d_ff=None, top_k=3, num_kernels=3, encoder_layers=2, hidden_dim=None, coef_scale=0.1, tfactor=0.5, revin=1, ma_type='ema', ema_a=0.3, ema_b=0.3, alpha=0.35, dropout=0.1, batch_size=64, is_training=1, model_id='ETTh1_96_336', model='PCFNet', data='ETTh1', root_path='D:\\work\\datasets\\all_datasets/ETT-small/', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=96, label_len=48, pred_len=336, seasonal_patterns='Monthly', enc_in=7, embed='timeF', activation='gelu', num_workers=0, itr=1, train_epochs=10, embedding_epochs=5, patience=3, pct_start=0.2, learning_rate=0.0004, embedding_lr=0.0005, des='Exp', loss='MSE', lradj='type1', use_gpu=True, gpu=0, use_multi_gpu=False, devices='0,1,2,3', use_dtw=False, inverse=False)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_96_336_PCFNet_ETTh1_bs64_ftM_sl96_ll48_pre336_dm64_nh8_dffNone_tk3_nk3_el2_fl1_hdNone_cs0.1_tf0.5_dp01_adr015_em0.3_lr00004_ep10_Exp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8209
+val 2545
+test 2545
+	iters: 100, epoch: 1 | loss: 2.4883838
+	speed: 0.0261s/iter; left time: 30.8266s
+Epoch: 1 cost time: 3.2846646308898926
+Epoch: 1, Steps: 128 | Train Loss: 2.6130826 Vali Loss: 3.3345059 Test Loss: 0.4716057
+Validation loss decreased (inf --> 3.334506).  Saving model ...
+	iters: 100, epoch: 2 | loss: 2.4813204
+	speed: 0.0350s/iter; left time: 36.8154s
+Epoch: 2 cost time: 2.818751096725464
+Epoch: 2, Steps: 128 | Train Loss: 2.5103640 Vali Loss: 3.3169668 Test Loss: 0.4656911
+Validation loss decreased (3.334506 --> 3.316967).  Saving model ...
+	iters: 100, epoch: 3 | loss: 2.5012732
+	speed: 0.0348s/iter; left time: 32.1582s
+Epoch: 3 cost time: 2.820176362991333
+Epoch: 3, Steps: 128 | Train Loss: 2.4841350 Vali Loss: 3.3003971 Test Loss: 0.4579508
+Validation loss decreased (3.316967 --> 3.300397).  Saving model ...
+	iters: 100, epoch: 4 | loss: 2.4596949
+	speed: 0.0335s/iter; left time: 26.6987s
+Epoch: 4 cost time: 2.715123414993286
+Epoch: 4, Steps: 128 | Train Loss: 2.4715757 Vali Loss: 3.2976575 Test Loss: 0.4550826
+Validation loss decreased (3.300397 --> 3.297657).  Saving model ...
+	iters: 100, epoch: 5 | loss: 2.4857855
+	speed: 0.0338s/iter; left time: 22.6333s
+Epoch: 5 cost time: 2.789534568786621
+Epoch: 5, Steps: 128 | Train Loss: 2.4657179 Vali Loss: 3.2933578 Test Loss: 0.4521711
+Validation loss decreased (3.297657 --> 3.293358).  Saving model ...
+	iters: 100, epoch: 6 | loss: 2.4899004
+	speed: 0.0341s/iter; left time: 18.4513s
+Epoch: 6 cost time: 2.741677761077881
+Epoch: 6, Steps: 128 | Train Loss: 2.4620763 Vali Loss: 3.2936542 Test Loss: 0.4520037
+EarlyStopping counter: 1 out of 3
+	iters: 100, epoch: 7 | loss: 2.4643164
+	speed: 0.0327s/iter; left time: 13.5257s
+Epoch: 7 cost time: 2.6459779739379883
+Epoch: 7, Steps: 128 | Train Loss: 2.4603751 Vali Loss: 3.2897410 Test Loss: 0.4518735
+Validation loss decreased (3.293358 --> 3.289741).  Saving model ...
+	iters: 100, epoch: 8 | loss: 2.4219685
+	speed: 0.0331s/iter; left time: 9.4317s
+Epoch: 8 cost time: 2.727147102355957
+Epoch: 8, Steps: 128 | Train Loss: 2.4597976 Vali Loss: 3.2940557 Test Loss: 0.4520108
+EarlyStopping counter: 1 out of 3
+	iters: 100, epoch: 9 | loss: 2.4880202
+	speed: 0.0339s/iter; left time: 5.3189s
+Epoch: 9 cost time: 2.792149066925049
+Epoch: 9, Steps: 128 | Train Loss: 2.4589815 Vali Loss: 3.2915183 Test Loss: 0.4520022
+EarlyStopping counter: 2 out of 3
+	iters: 100, epoch: 10 | loss: 2.5235023
+	speed: 0.0339s/iter; left time: 0.9825s
+Epoch: 10 cost time: 2.763939380645752
+Epoch: 10, Steps: 128 | Train Loss: 2.4587021 Vali Loss: 3.2927700 Test Loss: 0.4519889
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_96_336_PCFNet_ETTh1_bs64_ftM_sl96_ll48_pre336_dm64_nh8_dffNone_tk3_nk3_el2_fl1_hdNone_cs0.1_tf0.5_dp01_adr015_em0.3_lr00004_ep10_Exp_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2545
+test shape: (2545, 336, 7) (2545, 336, 7)
+test shape: (2545, 336, 7) (2545, 336, 7)
+mse:0.4518735110759735, mae:0.4344936013221741, dtw:Not calculated
