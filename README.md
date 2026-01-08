@@ -1,5 +1,4 @@
-# PCFNet: Period–channel fusion network for multivariate time series forecasting — towards multi-period dependency modeling
-
+# PCFNet
 
 ## Updates
 The detailed training logs (see [_logs](logs/LongForecasting/PCFNet)).
