@@ -22,6 +22,11 @@ The detailed training logs:
     │   ├── ETTh2.csv
     │   ├── ETTm1.csv
     │   └── ETTm2.csv
+    ├── PEMS
+    │   ├── PEMS03.npz
+    │   ├── PEMS04.npz
+    │   ├── PEMS07.npz
+    │   └── PEMS08.npz
     ├── Solar
     │   └── solar_AL.txt
     ├── traffic
