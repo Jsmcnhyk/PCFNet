@@ -39,9 +39,11 @@ The detailed training logs:
    
    For Linux/macOS:
     ```bash
-    sh ./scripts/PCFNet.sh
+    sh scripts/LongForecasting/PCFNet.sh
+    sh scripts/ShortForecasting/PCFNet.sh
     ```
     For Windows:
     ```
-    ./scripts/PCFNet.bat
+    scripts/LongForecasting/PCFNet.bat
+    scripts/ShortForecasting/PCFNet.bat
     ```
