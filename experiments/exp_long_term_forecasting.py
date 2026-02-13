@@ -78,21 +78,12 @@ class Exp_Long_Term_Forecast(Exp_Basic):
                 preds.append(pred)
                 trues.append(true)
 
-                if self.args.data == 'PEMS':
-                    B, T, C = pred.shape
-                    pred = pred.cpu().numpy()
-                    true = true.cpu().numpy()
-                    pred = vali_data.inverse_transform(pred.reshape(-1, C)).reshape(B, T, C)
-                    true = vali_data.inverse_transform(true.reshape(-1, C)).reshape(B, T, C)
-                    mae, mse, rmse, mape, mspe = metric(pred, true)
-                    loss = mae
+
+                if flag == "val":
+                    loss = self.time_freq_mae(batch_y, outputs)
                     total_loss.append(loss.detach().cpu().item())
-                else:
-                    if flag == "val":
-                        loss = self.time_freq_mae(batch_y, outputs)
-                        total_loss.append(loss.detach().cpu().item())
-                    elif flag == "test":
-                        pass
+                elif flag == "test":
+                    pass
 
         if flag == "test":
             preds = np.concatenate(preds, axis=0)
@@ -310,7 +301,7 @@ class Exp_Long_Term_Forecast(Exp_Basic):
             dtw = 'Not calculated'
 
         mae, mse, rmse, mape, mspe = metric(preds, trues)
-        print('mse:{}, mae:{}, dtw:{}'.format(mse, mae, dtw))
+        print('mse:{}, mae:{}, rmse:{}, mape:{}'.format(mse, mae, rmse, mape))
         f = open("result_long_term_forecast.txt", 'a')
         f.write(setting + "  \n")
         f.write('mse:{}, mae:{}, dtw:{}'.format(mse, mae, dtw))
