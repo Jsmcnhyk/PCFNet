@@ -1,7 +1,9 @@
 # PCFNet
 
 ## Updates
-The detailed training logs (see [_logs](logs/LongForecasting/PCFNet)).
+The detailed training logs:
+- Long-term forecasting: [logs/LongForecasting/PCFNet](logs/LongForecasting/PCFNet)
+- Short-term forecasting: [logs/ShortForecasting/PCFNet](logs/ShortForecasting/PCFNet)
 
 ## Usage
 
