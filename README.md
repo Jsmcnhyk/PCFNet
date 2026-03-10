@@ -51,7 +51,7 @@ The detailed training logs:
 ## Bibtex
 If you find this work useful, please consider citing it:
  ```
-@article{Jiang2026FCFNet,
+@article{Jiang2026PCFNet,
         title = {PCFNet: Period–channel fusion network for multivariate time series forecasting — towards multi-period dependency modeling},
         journal = {Information Fusion},
         volume = {133},
