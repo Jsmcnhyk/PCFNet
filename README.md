@@ -47,3 +47,19 @@ The detailed training logs:
     scripts/LongForecasting/PCFNet.bat
     scripts/ShortForecasting/PCFNet.bat
     ```
+
+## Bibtex
+If you find this work useful, please consider citing it:
+ ```
+@article{Jiang2026FCFNet,
+        title = {PCFNet: Period–channel fusion network for multivariate time series forecasting — towards multi-period dependency modeling},
+        journal = {Information Fusion},
+        volume = {133},
+        pages = {104281},
+        year = {2026},
+        issn = {1566-2535},
+        doi = {https://doi.org/10.1016/j.inffus.2026.104281},
+        url = {https://www.sciencedirect.com/science/article/pii/S1566253526001600},
+        author = {Jinze Du and Songmao Jiang},
+}
+ ```
